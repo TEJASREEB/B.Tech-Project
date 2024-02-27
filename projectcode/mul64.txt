@@ -1,0 +1,634 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: vedic_64.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vedic_64.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vedic_64"
+Output Format                      : NGC
+Target Device                      : xa7a100t-2I-csg324
+
+---- Source Options
+Top Module Name                    : vedic_64
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\project\Batch-2\ha.v" into library work
+Parsing module <ha>.
+Analyzing Verilog file "F:\project\Batch-2\mul_2x2.v" into library work
+Parsing module <mul_2x2>.
+Analyzing Verilog file "F:\project\Batch-2\add_6.v" into library work
+Parsing module <adder_6>.
+Analyzing Verilog file "F:\project\Batch-2\add_4.v" into library work
+Parsing module <adder_4>.
+Analyzing Verilog file "F:\project\Batch-2\mul_4x4.v" into library work
+Parsing module <mul_4x4>.
+Analyzing Verilog file "F:\project\Batch-2\add_8.v" into library work
+Parsing module <add_8>.
+Analyzing Verilog file "F:\project\Batch-2\add_12.v" into library work
+Parsing module <add_12>.
+Analyzing Verilog file "F:\project\Batch-2\vedic_8.v" into library work
+Parsing module <vedic_8>.
+Analyzing Verilog file "F:\project\Batch-2\add_24.v" into library work
+Parsing module <add_24>.
+Analyzing Verilog file "F:\project\Batch-2\add_16.v" into library work
+Parsing module <add_16>.
+Analyzing Verilog file "F:\project\Batch-2\vedic_16.v" into library work
+Parsing module <vedic_16>.
+Analyzing Verilog file "F:\project\Batch-2\add_48.v" into library work
+Parsing module <add_48>.
+Analyzing Verilog file "F:\project\Batch-2\add_32.v" into library work
+Parsing module <add_32>.
+Analyzing Verilog file "F:\project\Batch-2\vedic_32.v" into library work
+Parsing module <vedic_32>.
+Analyzing Verilog file "F:\project\Batch-2\add_96.v" into library work
+Parsing module <add_96>.
+Analyzing Verilog file "F:\project\Batch-2\add_64.v" into library work
+Parsing module <add_64>.
+Analyzing Verilog file "F:\project\Batch-2\vedic_64.v" into library work
+Parsing module <vedic_64>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <vedic_64>.
+
+Elaborating module <vedic_32>.
+
+Elaborating module <vedic_16>.
+
+Elaborating module <vedic_8>.
+
+Elaborating module <mul_4x4>.
+
+Elaborating module <mul_2x2>.
+
+Elaborating module <ha>.
+
+Elaborating module <adder_4>.
+
+Elaborating module <adder_6>.
+
+Elaborating module <add_8>.
+
+Elaborating module <add_12>.
+
+Elaborating module <add_16>.
+
+Elaborating module <add_24>.
+
+Elaborating module <add_32>.
+
+Elaborating module <add_48>.
+
+Elaborating module <add_64>.
+
+Elaborating module <add_96>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <vedic_64>.
+    Related source file is "F:\project\Batch-2\vedic_64.v".
+    Summary:
+	no macro.
+Unit <vedic_64> synthesized.
+
+Synthesizing Unit <vedic_32>.
+    Related source file is "F:\project\Batch-2\vedic_32.v".
+    Summary:
+	no macro.
+Unit <vedic_32> synthesized.
+
+Synthesizing Unit <vedic_16>.
+    Related source file is "F:\project\Batch-2\vedic_16.v".
+    Summary:
+	no macro.
+Unit <vedic_16> synthesized.
+
+Synthesizing Unit <vedic_8>.
+    Related source file is "F:\project\Batch-2\vedic_8.v".
+    Summary:
+	no macro.
+Unit <vedic_8> synthesized.
+
+Synthesizing Unit <mul_4x4>.
+    Related source file is "F:\project\Batch-2\mul_4x4.v".
+    Summary:
+	no macro.
+Unit <mul_4x4> synthesized.
+
+Synthesizing Unit <mul_2x2>.
+    Related source file is "F:\project\Batch-2\mul_2x2.v".
+    Summary:
+	no macro.
+Unit <mul_2x2> synthesized.
+
+Synthesizing Unit <ha>.
+    Related source file is "F:\project\Batch-2\ha.v".
+    Summary:
+Unit <ha> synthesized.
+
+Synthesizing Unit <adder_4>.
+    Related source file is "F:\project\Batch-2\add_4.v".
+    Found 4-bit adder for signal <y> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder_4> synthesized.
+
+Synthesizing Unit <adder_6>.
+    Related source file is "F:\project\Batch-2\add_6.v".
+    Found 6-bit adder for signal <y> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <adder_6> synthesized.
+
+Synthesizing Unit <add_8>.
+    Related source file is "F:\project\Batch-2\add_8.v".
+    Found 8-bit adder for signal <y> created at line 27.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_8> synthesized.
+
+Synthesizing Unit <add_12>.
+    Related source file is "F:\project\Batch-2\add_12.v".
+    Found 12-bit adder for signal <c> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_12> synthesized.
+
+Synthesizing Unit <add_16>.
+    Related source file is "F:\project\Batch-2\add_16.v".
+    Found 16-bit adder for signal <c> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_16> synthesized.
+
+Synthesizing Unit <add_24>.
+    Related source file is "F:\project\Batch-2\add_24.v".
+    Found 24-bit adder for signal <c> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_24> synthesized.
+
+Synthesizing Unit <add_32>.
+    Related source file is "F:\project\Batch-2\add_32.v".
+    Found 32-bit adder for signal <c> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_32> synthesized.
+
+Synthesizing Unit <add_48>.
+    Related source file is "F:\project\Batch-2\add_48.v".
+    Found 48-bit adder for signal <c> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_48> synthesized.
+
+Synthesizing Unit <add_64>.
+    Related source file is "F:\project\Batch-2\add_64.v".
+    Found 64-bit adder for signal <c> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_64> synthesized.
+
+Synthesizing Unit <add_96>.
+    Related source file is "F:\project\Batch-2\add_96.v".
+    Found 96-bit adder for signal <c> created at line 25.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <add_96> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1023
+ 12-bit adder                                          : 128
+ 16-bit adder                                          : 16
+ 24-bit adder                                          : 32
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 256
+ 48-bit adder                                          : 8
+ 6-bit adder                                           : 512
+ 64-bit adder                                          : 1
+ 8-bit adder                                           : 64
+ 96-bit adder                                          : 2
+# Xors                                                 : 2048
+ 1-bit xor2                                            : 2048
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst - The specified part-type was not generated at build time. XST is loading the full part-type and will therefore consume more CPU and memory.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+Loading device for application Rf_Device from file '7a100t.nph' in environment C:\Xilinx\14.4\ISE_DS\ISE\.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1023
+ 12-bit adder                                          : 128
+ 16-bit adder                                          : 16
+ 24-bit adder                                          : 32
+ 32-bit adder                                          : 4
+ 4-bit adder                                           : 256
+ 48-bit adder                                          : 8
+ 6-bit adder                                           : 512
+ 64-bit adder                                          : 1
+ 8-bit adder                                           : 64
+ 96-bit adder                                          : 2
+# Xors                                                 : 2048
+ 1-bit xor2                                            : 2048
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <vedic_64> ...
+
+Optimizing unit <vedic_32> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vedic_64, actual ratio is 21.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : vedic_64.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 14268
+#      GND                         : 1
+#      LUT1                        : 385
+#      LUT2                        : 1624
+#      LUT3                        : 1322
+#      LUT4                        : 2081
+#      LUT5                        : 661
+#      LUT6                        : 3564
+#      MUXCY                       : 2230
+#      XORCY                       : 2400
+# IO Buffers                       : 256
+#      IBUF                        : 128
+#      OBUF                        : 128
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa7a100tcsg324-2i 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                 9637  out of  63400    15%  
+    Number used as Logic:              9637  out of  63400    15%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   9637
+   Number with an unused Flip Flop:    9637  out of   9637   100%  
+   Number with an unused LUT:             0  out of   9637     0%  
+   Number of fully used LUT-FF pairs:     0  out of   9637     0%  
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                         256
+ Number of bonded IOBs:                 256  out of    210   121% (*) 
+
+Specific Feature Utilization:
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 19.645ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1723657730118707 / 128
+-------------------------------------------------------------------------
+Delay:               19.645ns (Levels of Logic = 141)
+  Source:            a<5> (PAD)
+  Destination:       c<127> (PAD)
+
+  Data Path: a<5> to c<127>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           184   0.001   0.901  a_5_IBUF (a_5_IBUF)
+     LUT5:I0->O            5   0.097   0.639  v1/v1/v1/m2/a1/Madd_y_lut<0>1 (v1/v1/v1/m2/a1/Madd_y_lut<0>)
+     LUT6:I2->O            3   0.097   0.755  v1/v1/v1/m2/a1/Madd_y_cy<1>11 (v1/v1/v1/m2/a1/Madd_y_cy<1>)
+     LUT5:I0->O            3   0.097   0.367  v1/v1/v1/m2/a1/Madd_y_xor<2>11 (v1/v1/v1/m2/s1<2>)
+     LUT6:I5->O            2   0.097   0.748  v1/v1/v1/m2/a3/Madd_y_lut<0>221 (v1/v1/v1/m2/a3/Madd_y_lut<0>22)
+     LUT6:I1->O            2   0.097   0.758  v1/v1/v1/m2/a3/Madd_y_cy<0>31 (v1/v1/v1/m2/a3/Madd_y_cy<0>2)
+     LUT6:I0->O            2   0.097   0.748  v1/v1/v1/m2/a3/Madd_y_cy<0>41 (v1/v1/v1/m2/a3/Madd_y_cy<0>3)
+     LUT6:I1->O            1   0.097   0.000  v1/v1/v1/m2/a3/Madd_y_xor<0>51 (v1/v1/v1/q1<6>)
+     MUXCY:S->O            0   0.353   0.000  v1/v1/v1/a1/Madd_y_cy<6> (v1/v1/v1/a1/Madd_y_cy<6>)
+     XORCY:CI->O           2   0.370   0.360  v1/v1/v1/a1/Madd_y_xor<7> (v1/v1/v1/t2<7>)
+     LUT3:I2->O            1   0.097   0.355  v1/v1/v1/a3/Madd_c7 (v1/v1/v1/a3/Madd_c7)
+     LUT2:I1->O            1   0.097   0.000  v1/v1/v1/a3/Madd_c_lut<0>8 (v1/v1/v1/a3/Madd_c_lut<0>8)
+     MUXCY:S->O            1   0.353   0.000  v1/v1/v1/a3/Madd_c_cy<0>_7 (v1/v1/v1/a3/Madd_c_cy<0>8)
+     MUXCY:CI->O           1   0.023   0.000  v1/v1/v1/a3/Madd_c_cy<0>_8 (v1/v1/v1/a3/Madd_c_cy<0>9)
+     XORCY:CI->O           1   0.370   0.355  v1/v1/v1/a3/Madd_c_xor<0>_9 (v1/v1/q0<14>)
+     LUT2:I1->O            1   0.097   0.000  v1/v1/a1/Madd_c_lut<6> (v1/v1/a1/Madd_c_lut<6>)
+     MUXCY:S->O            1   0.353   0.000  v1/v1/a1/Madd_c_cy<6> (v1/v1/a1/Madd_c_cy<6>)
+     XORCY:CI->O           2   0.370   0.360  v1/v1/a1/Madd_c_xor<7> (v1/v1/q4<7>)
+     LUT2:I1->O            1   0.097   0.355  v1/v1/a3/Madd_c7 (v1/v1/a3/Madd_c7_XDM0001)
+     LUT4:I3->O            1   0.097   0.000  v1/v1/a3/Madd_c_lut<0>8 (v1/v1/a3/Madd_c_lut<0>8_XDM0001)
+     MUXCY:S->O            1   0.353   0.000  v1/v1/a3/Madd_c_cy<0>_7 (v1/v1/a3/Madd_c_cy<0>8_XDM0001)
+     XORCY:CI->O           1   0.370   0.571  v1/v1/a3/Madd_c_xor<0>_8 (v1/q0<17>)
+     LUT5:I2->O            1   0.097   0.000  v1/a1/Madd_c_lut<1> (v1/a1/Madd_c_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  v1/a1/Madd_c_cy<1> (v1/a1/Madd_c_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<2> (v1/a1/Madd_c_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<3> (v1/a1/Madd_c_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<4> (v1/a1/Madd_c_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<5> (v1/a1/Madd_c_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<6> (v1/a1/Madd_c_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<7> (v1/a1/Madd_c_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<8> (v1/a1/Madd_c_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<9> (v1/a1/Madd_c_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<10> (v1/a1/Madd_c_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<11> (v1/a1/Madd_c_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<12> (v1/a1/Madd_c_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<13> (v1/a1/Madd_c_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  v1/a1/Madd_c_cy<14> (v1/a1/Madd_c_cy<14>)
+     XORCY:CI->O           2   0.370   0.360  v1/a1/Madd_c_xor<15> (v1/q4<15>)
+     LUT2:I1->O            1   0.097   0.355  v1/a3/Madd_c15 (v1/a3/Madd_c15_XDM0001)
+     LUT4:I3->O            1   0.097   0.000  v1/a3/Madd_c_lut<0>16 (v1/a3/Madd_c_lut<0>16_XDM0001)
+     MUXCY:S->O            1   0.353   0.000  v1/a3/Madd_c_cy<0>_15 (v1/a3/Madd_c_cy<0>16_XDM0001)
+     XORCY:CI->O           1   0.370   0.571  v1/a3/Madd_c_xor<0>_16 (q0<33>)
+     LUT5:I2->O            1   0.097   0.000  a1/Madd_c_lut<1> (a1/Madd_c_lut<1>)
+     MUXCY:S->O            1   0.353   0.000  a1/Madd_c_cy<1> (a1/Madd_c_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<2> (a1/Madd_c_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<3> (a1/Madd_c_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<4> (a1/Madd_c_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<5> (a1/Madd_c_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<6> (a1/Madd_c_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<7> (a1/Madd_c_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<8> (a1/Madd_c_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<9> (a1/Madd_c_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<10> (a1/Madd_c_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<11> (a1/Madd_c_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<12> (a1/Madd_c_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<13> (a1/Madd_c_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<14> (a1/Madd_c_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<15> (a1/Madd_c_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<16> (a1/Madd_c_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<17> (a1/Madd_c_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<18> (a1/Madd_c_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<19> (a1/Madd_c_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<20> (a1/Madd_c_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<21> (a1/Madd_c_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<22> (a1/Madd_c_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<23> (a1/Madd_c_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<24> (a1/Madd_c_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<25> (a1/Madd_c_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<26> (a1/Madd_c_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<27> (a1/Madd_c_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<28> (a1/Madd_c_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<29> (a1/Madd_c_cy<29>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<30> (a1/Madd_c_cy<30>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<31> (a1/Madd_c_cy<31>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<32> (a1/Madd_c_cy<32>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<33> (a1/Madd_c_cy<33>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<34> (a1/Madd_c_cy<34>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<35> (a1/Madd_c_cy<35>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<36> (a1/Madd_c_cy<36>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<37> (a1/Madd_c_cy<37>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<38> (a1/Madd_c_cy<38>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<39> (a1/Madd_c_cy<39>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<40> (a1/Madd_c_cy<40>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<41> (a1/Madd_c_cy<41>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<42> (a1/Madd_c_cy<42>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<43> (a1/Madd_c_cy<43>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<44> (a1/Madd_c_cy<44>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<45> (a1/Madd_c_cy<45>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<46> (a1/Madd_c_cy<46>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<47> (a1/Madd_c_cy<47>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<48> (a1/Madd_c_cy<48>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<49> (a1/Madd_c_cy<49>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<50> (a1/Madd_c_cy<50>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<51> (a1/Madd_c_cy<51>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<52> (a1/Madd_c_cy<52>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<53> (a1/Madd_c_cy<53>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<54> (a1/Madd_c_cy<54>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<55> (a1/Madd_c_cy<55>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<56> (a1/Madd_c_cy<56>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<57> (a1/Madd_c_cy<57>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<58> (a1/Madd_c_cy<58>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<59> (a1/Madd_c_cy<59>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<60> (a1/Madd_c_cy<60>)
+     MUXCY:CI->O           1   0.023   0.000  a1/Madd_c_cy<61> (a1/Madd_c_cy<61>)
+     MUXCY:CI->O           0   0.023   0.000  a1/Madd_c_cy<62> (a1/Madd_c_cy<62>)
+     XORCY:CI->O           2   0.370   0.360  a1/Madd_c_xor<63> (q4<63>)
+     LUT3:I2->O            1   0.097   0.439  a3/Madd_c63 (a3/Madd_c63)
+     LUT2:I0->O            1   0.097   0.000  a3/Madd_c_lut<0>64 (a3/Madd_c_lut<0>64)
+     MUXCY:S->O            1   0.353   0.000  a3/Madd_c_cy<0>_63 (a3/Madd_c_cy<0>64)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_64 (a3/Madd_c_cy<0>65)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_65 (a3/Madd_c_cy<0>66)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_66 (a3/Madd_c_cy<0>67)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_67 (a3/Madd_c_cy<0>68)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_68 (a3/Madd_c_cy<0>69)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_69 (a3/Madd_c_cy<0>70)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_70 (a3/Madd_c_cy<0>71)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_71 (a3/Madd_c_cy<0>72)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_72 (a3/Madd_c_cy<0>73)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_73 (a3/Madd_c_cy<0>74)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_74 (a3/Madd_c_cy<0>75)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_75 (a3/Madd_c_cy<0>76)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_76 (a3/Madd_c_cy<0>77)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_77 (a3/Madd_c_cy<0>78)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_78 (a3/Madd_c_cy<0>79)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_79 (a3/Madd_c_cy<0>80)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_80 (a3/Madd_c_cy<0>81)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_81 (a3/Madd_c_cy<0>82)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_82 (a3/Madd_c_cy<0>83)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_83 (a3/Madd_c_cy<0>84)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_84 (a3/Madd_c_cy<0>85)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_85 (a3/Madd_c_cy<0>86)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_86 (a3/Madd_c_cy<0>87)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_87 (a3/Madd_c_cy<0>88)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_88 (a3/Madd_c_cy<0>89)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_89 (a3/Madd_c_cy<0>90)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_90 (a3/Madd_c_cy<0>91)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_91 (a3/Madd_c_cy<0>92)
+     MUXCY:CI->O           1   0.023   0.000  a3/Madd_c_cy<0>_92 (a3/Madd_c_cy<0>93)
+     MUXCY:CI->O           0   0.023   0.000  a3/Madd_c_cy<0>_93 (a3/Madd_c_cy<0>94)
+     XORCY:CI->O           1   0.370   0.339  a3/Madd_c_xor<0>_94 (c_127_OBUF)
+     OBUF:I->O                 0.000          c_127_OBUF (c<127>)
+    ----------------------------------------
+    Total                     19.645ns (9.946ns logic, 9.699ns route)
+                                       (50.6% logic, 49.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 129.00 secs
+Total CPU time to Xst completion: 129.22 secs
+ 
+--> 
+
+Total memory usage is 890400 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
